@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#f2f2ff">
+    <h1><br><br><br><br><br><br>    
+        <form action="/result" method="post" style="text-align:center">
+            <label for="subjects">シラバスを検索</label>
+            <select name="subjects">
+                {% for subject in subjects %}
+                    <option value="{{ subject }}">{{ subject }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">検索</button>
+        </form>
+    </h1>
+</body>
+</html>
